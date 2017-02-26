@@ -1,20 +1,27 @@
 set nocompatible              " be iMproved, required
-"filetype off                  " required
+filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
-"set rtp+=~/.vim/bundle/Vundle.vim
-"call vundle#begin()
+set rtp+=~/.vim/vundle/Vundle.vim
+call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
-"Plugin 'VundleVim/Vundle.vim'
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'tpope/vim-surround'
+Plugin 'jiangmiao/auto-pairs'
+Plugin 'alvan/vim-closetag'
 "Plugin 'Valloric/YouCompleteMe'
 "Plugin 'davidhalter/jedi-vim' "Auto-complete python
 "Plugin 'artur-shaik/vim-javacomplete2' "Autocomplete and import java
 " All of your Plugins must be added before the following line
-"call vundle#end()            " required
-"filetype plugin indent on    " required
+call vundle#end()            " required
+filetype plugin indent on    " required
+
+
+
+
 "------------------
 "- Custom setting -
 "------------------
@@ -36,5 +43,5 @@ set shiftwidth=4	"Set hardtab to n length
 set smartindent		"
 set autoindent		"
 " Display white character
-set listchars=space:·,trail:·,eol:¬,tab:\›\ 
+set listchars=trail:·,eol:¬,tab:\›\ 
 set list
